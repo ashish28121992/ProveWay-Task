@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 20px;
+}
+
+.box {
+  width: 300px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  .content,
+  .initial {
+    margin-top: 10px;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  .content {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+
+
+    h4 {
+      margin-bottom: 5px;
+    }
+
+    .options {
+      display: flex;
+      gap: 10px;
+    }
+
+    .size-colour {
+
+      display: flex;
+      gap: 70px;
+
+    }
+
+    .title-size {
+      margin-left: 10px;
+    }
+
+    .arrow-number {
+      font-weight: bold;
+      margin-top: 18px;
+      margin-left: -5px;
+      font-size: 10px;
+      color: #333;
+
+    }
+
+    .main_arrow {
+      margin-top: 1%;
+      display: flex;
+      gap: 30px;
+    }
+
+    .down-arrow-box {
+      display: flex;
+      margin-left: -25px;
+      width: 32%;
+      padding: 4px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+
+    }
+
+
+
+
+    .down-arrow-box h6 {
+      display: flex;
+      font-size: smaller;
+      margin-top: 10px;
+      margin-left: 2px;
+    }
+
+    .arrow-size-s {
+
+      font-weight: bold;
+      margin-bottom: 4px;
+
+    }
+
+    .arrow-size-s-a {
+      margin-left: 45px;
+      font-size: 10px;
+      margin-top: 10px;
+    }
+
+    .arrow-size-c-a {
+      margin-left: 20px;
+      font-size: 10px;
+      margin-top: 11px;
+    }
+
+    .arrow-size {
+      margin-left: 20px;
+      font-size: 10px;
+    }
+
+    .color {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 5px;
+      cursor: pointer;
+
+      &.red {
+        background-color: #ff6961;
+      }
+
+      &.blue {
+        background-color: #61a1ff;
+      }
+
+      &.green {
+        background-color: #77dd77;
+      }
+    }
+
+    .size {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 5px;
+      cursor: pointer;
+
+      &.small {
+        font-size: 12px;
+      }
+
+      &.medium {
+        font-size: 16px;
+      }
+
+      &.large {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff6961;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    display: none;
+  }
+
+  &.expanded {
+    background-color: #e0e0e0;
+
+    .content {
+      display: flex;
+    }
+
+    .ribbon {
+      display: block;
+    }
+  }
+}
+
+.initial {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+
+.unit-info {
+  display: flex;
+  align-items: center;
+}
+
+.discount-box {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  margin-left: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 14px;
+
+}
+
+
+.secondline {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.cut-price {
+  text-decoration: line-through;
+  color: #888;
+}
+
+
+.radio-btn {
+  margin-right: 10px;
+}
+
+.bottom {
+  width: 310px;
+  padding: 18px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #FF6600;
+}
+
+.bottom-one {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-one {
+  display: flex;
+  gap: 5px;
+}
+
+.bottom-second-last {
+  display: flex;
+  gap: 50px;
+
+}
+
+.bottom-h1 h5 {
+  color: #ff6600;
+}
+
+.bottom-h1 h4 {
+  color: #e8edf1;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.line-one {
+  margin: 12px;
+
+  width: 50px;
+
+}
+
+.line-two {
+  margin: 12px;
+
+  width: 50px;
+
+}
+
+.header-content {
+  font-size: x-large;
+  color: #ff6600;
+  text-wrap: nowrap;
+
+
+}
+
+.symbole-color {
+  color: #f9f9f9;
+}
